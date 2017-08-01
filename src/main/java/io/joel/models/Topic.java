@@ -13,7 +13,7 @@ public class Topic {
     private String title;
     private String description;
 
-    @OneToMany(mappedBy = "comment", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "topic", cascade = CascadeType.ALL)
     private List<Comment> comments;
 
     public Topic() {}
